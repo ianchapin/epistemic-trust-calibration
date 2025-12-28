@@ -30,6 +30,12 @@ This file is intended to change rarely.
    Any confidence allocation should include conditions that would
    trigger an update upward or downward.
 
+8. This framework is itself a representation.
+
+   As a representation, it is subject to the same limits, ambiguities, scope constraints, and confidence calibration as any other representation.
+
+   Any use of this framework that treats it as authoritative, decisive, or mandatory violates its own constraints.
+
 ## Core Distinctions
 
 - Representations are tools, not authorities.
@@ -67,6 +73,9 @@ The framework explicitly forbids:
 - Collapsing multiple ambiguity types into one
 - Using representations beyond their scoped confidence
 - Laundering judgment as certainty
+- Mandating the framework itself as a universal gate, requirement, or compliance step
+
+When this framework is applied by mandate rather than judgment, it ceases to function as a trust-calibration tool and becomes a legitimacy shield.
 
 ## Judgment
 
@@ -77,6 +86,12 @@ The role of this framework is not to eliminate judgment,
 but to make explicit where judgment enters,
 bound its confidence,
 and preserve its revisability.
+
+## Confidence Direction Constraint
+
+The default effect of applying this framework should be to reduce or bound confidence, not to increase it.
+
+If applying the framework results in increased confidence without additional safeguards, verification paths, or explicit judgment ownership, it is likely being misused.
 
 ## Canonical Metaphor
 
@@ -94,5 +109,4 @@ This framework does not:
 
 ## Closing Constraint
 
-Any use of this framework that claims to remove uncertainty,
-eliminate trust, or replace judgment violates its core constraints.
+Any use of this framework that claims to remove uncertainty, justify a decision, confer legitimacy, obscure the presence of trust, or replace judgment violates its core constraints.

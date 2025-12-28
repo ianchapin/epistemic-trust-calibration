@@ -1,0 +1,5 @@
+# Local bundling tool
+bundle_repo.py
+all_text.txt
+*.bundle.txt
+*.bundle.md

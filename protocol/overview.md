@@ -39,24 +39,68 @@ A minimal annotation includes:
 1. **Representation**
    - What is being relied on? (model output, metric, summary, analogy, etc.)
 
-2. **Intended Use**
-   - What is it being used for *right now*? (exploration, explanation, decision support, justification)
+2. **Intended Use (Tier)**
+   - What is it being used for right now?
+   - Suggested tiers: exploratory, explanatory, operational, high-stakes
 
-3. **Scope**
+3. **Decision Context**
+   - stakes, reversibility, detectability, time pressure, alternatives (see below)
+
+4. **Scope Boundaries**
    - Where does this apply, and where does it not apply?
 
-4. **Ambiguity Types**
-   - Which ambiguity types are present? (semantic, contextual, mapping, structural, normative)
+5. **Ambiguity Types (and why)**
+   - semantic, contextual, mapping, structural, normative
 
-5. **Confidence (Reliance Level)**
-   - How much weight should this carry, given stakes and reversibility?
-   - (Qualitative is sufficient.)
+6. **Reliance Level (Confidence)**
+   - low / medium / high
+   - include **what this permits** (e.g., “input only” vs “decision weight”)
 
-6. **Known Failure Modes**
-   - How could this fail in ways that matter?
+   Optional permission modes (to make reliance legible):
+   - **Input-only:** may inform thinking, not decisions
+   - **Supporting:** one factor among many, cannot dominate
+   - **Weight-bearing:** can meaningfully influence decisions with checks
+   - **Decisive:** rare; requires strong validation + explicit owner
 
-7. **Judgment Handoff**
-   - What cannot be resolved here, and where judgment must enter?
+7. **Failure Modes**
+   - failure → detectability → impact → mitigation
+
+8. **Revision Triggers**
+   - what would raise reliance?
+   - what would lower reliance?
+
+9. **Judgment Handoff**
+   - what cannot be resolved here
+   - who owns the decision anyway
+
+---
+
+## Decision Context (Confidence Inputs)
+
+Confidence calibration depends on the decision context.
+
+Before assigning a reliance level, capture:
+
+- **Stakes:** How costly is being wrong?
+- **Reversibility:** Can we undo or revise the decision?
+- **Detectability:** How quickly would failure be noticed?
+- **Time pressure:** Are we acting now, soon, or later?
+- **Alternatives:** What other representations or checks are available?
+
+If these are unknown or contested, confidence should be reduced rather than assumed.
+
+---
+
+## Failure Modes (Structured)
+
+Failure modes should be written as:
+
+- **Failure:** What breaks / what becomes false / what goes missing
+- **Detectability:** easy / moderate / hard (or “likely to be noticed?”)
+- **Impact:** what happens if we miss it
+- **Mitigation:** verification, fallback, scope limit, second source, human review
+
+**Gating rule:** If impact is high and detectability is hard, reliance must be capped unless safeguards are explicit.
 
 ---
 
@@ -64,13 +108,25 @@ A minimal annotation includes:
 
 A representation should not be used beyond the tier it has earned.
 
-Typical tiers:
-- **Exploratory:** generates hypotheses or options
-- **Explanatory:** supports understanding or communication
-- **Operational:** supports action with verification safeguards
-- **High-stakes:** requires strong validation and explicit responsibility
+Suggested tiers:
 
-Tier names can vary; the separation is what matters.
+- **Exploratory**
+  - Permits: idea generation, hypothesis formation, option listing
+  - Prohibits: justification, decisive weight
+
+- **Explanatory**
+  - Permits: intuition-building, communication, shared framing
+  - Prohibits: “therefore we must…” leaps without checks
+
+- **Operational**
+  - Permits: action support **with safeguards**
+  - Requires: verification route, failure monitoring, fallback plan, explicit owner for judgment calls
+
+- **High-stakes**
+  - Permits: influence on irreversible or high-impact decisions only with strong validation
+  - Requires: explicit responsibility, independent confirmation, named limits, and a clearly accountable decision owner
+
+Tier labels can vary; the separation is what matters.
 
 ---
 
@@ -91,14 +147,12 @@ The goal is not agreement; it is visible constraints.
 
 ## Minimal Template
 
-Use this template when applying the protocol:
-
-- **Representation:**  
-- **Intended use:**  
-- **Scope:**  
-- **Ambiguity types:**  
-- **Confidence / reliance level:**  
-- **Known failure modes:**  
-- **Judgment handoff:**  
-
-If the annotation cannot be filled out, confidence should be reduced rather than assumed.
+- **Representation:**
+- **Intended use (tier):**
+- **Decision context:** stakes, reversibility, detectability, time pressure, alternatives
+- **Scope boundaries:**
+- **Ambiguity types (why):**
+- **Reliance level:** low / medium / high — *what this permits*
+- **Failure modes:** failure → detectability → impact → mitigation
+- **Revision triggers:** raise / lower
+- **Judgment handoff:** unresolved + owner

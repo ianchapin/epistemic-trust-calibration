@@ -52,6 +52,20 @@ Each type is described in its own file.
 
 ---
 
+## Typical Responses by Ambiguity Type
+
+Typing ambiguity is not just labeling; it implies different moves.
+
+- **Semantic Ambiguity →** clarify meanings or accept plural meanings; reduce confidence if unresolved.
+- **Contextual Ambiguity →** restate intended context; resist scope transfer by default; reassess trust when reused.
+- **Mapping Ambiguity →** name the proxy gap; specify what is and isn’t captured; require a validation or “reality check” path.
+- **Structural Ambiguity →** list key assumptions; name what the structure excludes; avoid claims of completeness.
+- **Normative Ambiguity →** surface values and tradeoffs; identify stakeholders; assign ownership for value judgments.
+
+Multiple ambiguity types can coexist. Each should be handled on its own terms rather than collapsed.
+
+---
+
 ## Important Constraints
 
 A single situation may involve multiple ambiguity types at once.

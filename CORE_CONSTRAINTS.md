@@ -13,8 +13,10 @@ This file is intended to change rarely.
 2. Representations are necessary and irreducibly lossy.
    No representation fully preserves what it represents.
 
-3. Because representations are lossy, certainty can never be 0% or 100%.
-   Certainty always exists strictly between these extremes.
+3. Because representations are lossy, certainty is bounded in practice.
+   Treat claims of 0% or 100% certainty as warning labels:
+   they usually indicate hidden assumptions, definitional moves,
+   or unacknowledged judgment.
 
 4. Action is required despite uncertainty.
    Waiting for complete certainty is not an option.
@@ -23,6 +25,10 @@ This file is intended to change rarely.
    Trust cannot be eliminated, only hidden or displaced.
 
 6. If trust is unavoidable, it must be explicit, scoped, bounded, and revisable.
+
+7. Confidence is revisable.
+   Any confidence allocation should include conditions that would
+   trigger an update upward or downward.
 
 ## Core Distinctions
 

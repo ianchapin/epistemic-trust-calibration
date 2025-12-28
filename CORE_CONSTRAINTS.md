@@ -6,6 +6,8 @@ They describe structural conditions that hold whenever representations are used 
 
 This file is intended to change rarely.
 
+---
+
 ## Structural Invariants
 
 1. Thought operates on representations, not on reality directly.
@@ -36,12 +38,16 @@ This file is intended to change rarely.
 
    Any use of this framework that treats it as authoritative, decisive, or mandatory violates its own constraints.
 
+---
+
 ## Core Distinctions
 
 - Representations are tools, not authorities.
 - Language is a form of representation, not the substrate of thought.
 - Epistemic trust (reliability for a purpose) is distinct from moral or social trust.
 - Confidence concerns appropriate reliance, not truth.
+
+---
 
 ## Central Failure Mode
 
@@ -54,6 +60,8 @@ Examples include:
 - treating explanations as proof
 - treating analogies as truths
 
+---
+
 ## Permitted Moves
 
 The framework permits the following operations:
@@ -63,6 +71,8 @@ The framework permits the following operations:
 - Calibrating confidence without rejecting utility
 - Downgrading trust without discarding use
 - Separating judgment from certainty
+
+---
 
 ## Forbidden Moves
 
@@ -77,6 +87,8 @@ The framework explicitly forbids:
 
 When this framework is applied by mandate rather than judgment, it ceases to function as a trust-calibration tool and becomes a legitimacy shield.
 
+---
+
 ## Judgment
 
 Judgment is irreducible.
@@ -87,16 +99,22 @@ but to make explicit where judgment enters,
 bound its confidence,
 and preserve its revisability.
 
+---
+
 ## Confidence Direction Constraint
 
 The default effect of applying this framework should be to reduce or bound confidence, not to increase it.
 
 If applying the framework results in increased confidence without additional safeguards, verification paths, or explicit judgment ownership, it is likely being misused.
 
+---
+
 ## Canonical Metaphor
 
 All representations are fingers pointing at the moon.
 The framework exists to prevent confusing the finger for the moon.
+
+---
 
 ## Non-Goals
 
@@ -106,6 +124,8 @@ This framework does not:
 - require consensus
 - eliminate ambiguity
 - replace human responsibility
+
+---
 
 ## Closing Constraint
 

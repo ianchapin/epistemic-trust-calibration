@@ -89,3 +89,7 @@ ____ → ____ → ____
 **Scope:** Valid for shared framing; Not for root cause/mitigations.  
 **Ambiguity→Consequence:** Mapping→verify key claims against raw logs before action.  
 **Reliance:** Supporting · **Cap:** Supporting · **Owner:** Incident Commander.
+
+---
+
+> Need a fuller version (failure modes, revision triggers, etc.)? Use the [`protocol/annotation-card.md`](annotation-card.md).

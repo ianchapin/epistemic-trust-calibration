@@ -13,8 +13,7 @@ Representations include things like:
 ⚠️ **Before using this framework, read [`CORE_CONSTRAINTS.md`](CORE_CONSTRAINTS.md) and [`MISUSE.md`](MISUSE.md).**  
 If you are looking for approval, certainty, or legitimacy, this framework is not the right tool.
 
-If you want the fastest on-ramp, start with the **Annotation Card**:  
-[`protocol/annotation-card.md`](protocol/annotation-card.md)
+**Fastest on-ramp:** `protocol/5-minute-annotation.md` (then `protocol/annotation-card.md` when you need more completeness)
 
 ---
 
@@ -99,7 +98,8 @@ Each section is modular and intended to stand on its own.
 ## About the Protocol
 
 The protocol provided in this repository:
-- starts with a lightweight **Annotation Card** for rapid, practical use ([`protocol/annotation-card.md`](protocol/annotation-card.md))
+- starts with a timeboxed **5-Minute Annotation** for rapid use ([`protocol/5-minute-annotation.md`](protocol/5-minute-annotation.md))
+- then uses the **Annotation Card** when you need more completeness ([`protocol/annotation-card.md`](protocol/annotation-card.md))
 - **annotates** representations rather than modifying them
 - constrains *how* outputs are relied on, not *what* decisions must be made
 - makes ambiguity, scope, and judgment visible

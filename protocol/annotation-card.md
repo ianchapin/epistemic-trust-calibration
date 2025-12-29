@@ -68,8 +68,6 @@ Pick one and state what it permits.
 
 ### 7) Failure Modes
 Write as: **failure → detectability → impact → mitigation**
-- 
-- 
 
 ### 8) Revision Triggers
 - Raise reliance if:
@@ -234,3 +232,5 @@ Irreversible actions require independent confirmation and an appeal path.
 - Acceptance: “I accept responsibility for the tradeoff and for maintaining appeal + monitoring.”
 
 ---
+
+> Short on time? Start with [`protocol/5-minute-annotation.md`](5-minute-annotation.md), then come back here for the fuller card.

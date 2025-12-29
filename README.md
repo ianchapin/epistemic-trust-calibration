@@ -87,9 +87,10 @@ Suggested reading order:
 4. `concepts/representations.md`
 5. `ambiguity/README.md`
 6. Individual ambiguity type pages
-7. `protocol/annotation-card.md`
-8. `protocol/overview.md`
-9. `use-cases/` (optional, speculative)
+7. `protocol/5-minute-annotation.md`
+8. `protocol/annotation-card.md`
+9. `protocol/overview.md`
+10. `use-cases/` (optional, speculative)
 
 Each section is modular and intended to stand on its own.
 
@@ -98,8 +99,8 @@ Each section is modular and intended to stand on its own.
 ## About the Protocol
 
 The protocol provided in this repository:
-- starts with a timeboxed **5-Minute Annotation** for rapid use ([`protocol/5-minute-annotation.md`](protocol/5-minute-annotation.md))
-- then uses the **Annotation Card** when you need more completeness ([`protocol/annotation-card.md`](protocol/annotation-card.md))
+- starts with a timeboxed **5-Minute Annotation** for rapid use [`protocol/5-minute-annotation.md`](protocol/5-minute-annotation.md)
+- then uses the **Annotation Card** when you need more completeness [`protocol/annotation-card.md`](protocol/annotation-card.md)
 - **annotates** representations rather than modifying them
 - constrains *how* outputs are relied on, not *what* decisions must be made
 - makes ambiguity, scope, and judgment visible

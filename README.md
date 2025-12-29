@@ -99,8 +99,8 @@ Each section is modular and intended to stand on its own.
 ## About the Protocol
 
 The protocol provided in this repository:
-- starts with a timeboxed **5-Minute Annotation** for rapid use: [`protocol/5-minute-annotation.md`](./protocol/5-minute-annotation.md)
-- then uses the **Annotation Card** when you need more completeness: [`protocol/annotation-card.md`](./protocol/annotation-card.md)
+- starts with a timeboxed **5-Minute Annotation** for rapid use: [`protocol/5-minute-annotation.md`](/protocol/5-minute-annotation.md)
+- then uses the **Annotation Card** when you need more completeness: [`protocol/annotation-card.md`](/protocol/annotation-card.md)
 - **annotates** representations rather than modifying them
 - constrains *how* outputs are relied on, not *what* decisions must be made
 - makes ambiguity, scope, and judgment visible

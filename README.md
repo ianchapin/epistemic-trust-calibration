@@ -13,7 +13,7 @@ Representations include things like:
 ⚠️ **Before using this framework, read [`CORE_CONSTRAINTS.md`](CORE_CONSTRAINTS.md) and [`MISUSE.md`](MISUSE.md).**  
 If you are looking for approval, certainty, or legitimacy, this framework is not the right tool.
 
-**Fastest on-ramp:** `protocol/5-minute-annotation.md` (then `protocol/annotation-card.md` when you need more completeness)
+**Fastest on-ramp:** [`protocol/5-minute-annotation.md`](./protocol/5-minute-annotation.md) (then [`protocol/annotation-card.md`](./protocol/annotation-card.md) when you need more completeness)
 
 ---
 

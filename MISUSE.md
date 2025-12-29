@@ -232,3 +232,64 @@ If it becomes:
 
 That is not failure.
 That is the framework working as intended.
+
+---
+
+## Appendix: 60-Second Misuse Self-Check (Readiness)
+
+This is a **self-diagnostic**, not a gate.
+It does not produce “approved / safe / compliant / ready.”
+If this checklist becomes mandatory, ceremonial, or used to justify outcomes, **it is being misused**.
+
+**How to use:** skim it quickly. If you hit **any red flag**, **downgrade reliance** and/or add safeguards before proceeding.
+
+### A) Authority & Closure (red flags)
+- [ ] Are we treating completion as “done” or “resolved”?
+- [ ] Are we using the output as the *reason* to act (vs. one input)?
+- [ ] Did anyone say “the framework says” as if it decides?
+- [ ] Are we implicitly promising safety/correctness/legitimacy?
+
+**If yes:** you are converting the framework into authority → **cap reliance** (usually to *Supporting* or lower).
+
+### B) Responsibility & Ownership (red flags)
+- [ ] Is the judgment owner “the team,” “leadership,” or unclear?
+- [ ] Are we using the framework to shift blame to process?
+- [ ] Would a postmortem read like “we followed the framework” instead of “we decided”?
+
+**If yes:** responsibility is being displaced → **name a single owner** and restate what remains unresolved.
+
+### C) Ambiguity Without Consequence (red flags)
+- [ ] Did we list ambiguity types but change nothing about behavior?
+- [ ] Did we avoid specifying a scope boundary because it felt inconvenient?
+- [ ] Did we keep the same reliance level even though ambiguity is high?
+
+**If yes:** this is decorative rigor → **force a consequence** (scope narrowing, verification, downgrade, monitoring, or explicit risk acceptance).
+
+### D) Scope Creep & Reuse (red flags)
+- [ ] Are we reusing an old annotation in a new context?
+- [ ] Is an exploratory/explanatory artifact now used operationally?
+- [ ] Are we relying on a proxy/summary/model beyond its stated purpose?
+
+**If yes:** context is drifting → **downgrade one tier by default** until re-annotated.
+
+### E) Confidence Inflation (red flags)
+- [ ] Did this process make us *more* confident without adding checks/safeguards?
+- [ ] Are we adding precision (numbers, scores) to “feel rigorous”?
+- [ ] Are stakes high while detectability is hard, yet reliance is weight-bearing/decisive?
+
+**If yes:** you are laundering judgment as certainty → **reduce reliance** and add independent verification + monitoring + fallback/appeal.
+
+---
+
+## What To Do When A Red Flag Triggers (tiny playbook)
+
+Pick the smallest move that changes behavior:
+
+- **Cap reliance:** Input-only / Supporting until checks exist  
+- **Narrow scope:** “Valid for X; not valid for Y” (two bullets)  
+- **Add one check:** a second source, validation step, audit, or human review  
+- **Add a tripwire:** how failure would be noticed + what you do immediately  
+- **Name an owner:** one person/role who accepts residual risk explicitly
+
+If none of these moves are politically or operationally possible, **do not use the framework as decoration.**
+Either use it honestly (with consequences) or don’t use it at all.

@@ -81,16 +81,16 @@ A central failure mode it addresses is mistaking representations for what they r
 You do not need to agree with or adopt the entire framework to use it, and it is not intended to be applied universally.
 
 Suggested reading order:
-1. `CORE_CONSTRAINTS.md`
-2. `MISUSE.md`
-3. `concepts/recursion.md`
-4. `concepts/representations.md`
-5. `ambiguity/README.md`
-6. Individual ambiguity type pages
-7. `protocol/5-minute-annotation.md`
-8. `protocol/annotation-card.md`
-9. `protocol/overview.md`
-10. `use-cases/` (optional, speculative)
+1. [`CORE_CONSTRAINTS.md`](./CORE_CONSTRAINTS.md)
+2. [`MISUSE.md`](./MISUSE.md)
+3. [`concepts/recursion.md`](./concepts/recursion.md)
+4. [`concepts/representations.md`](./concepts/representations.md)
+5. [`ambiguity/README.md`](./ambiguity/README.md)
+6. Individual ambiguity type pages (see the files in [`ambiguity/`](./ambiguity/))
+7. [`protocol/5-minute-annotation.md`](./protocol/5-minute-annotation.md)
+8. [`protocol/annotation-card.md`](./protocol/annotation-card.md)
+9. [`protocol/overview.md`](./protocol/overview.md)
+10. [`use-cases/`](./use-cases/) (optional, speculative)
 
 Each section is modular and intended to stand on its own.
 

@@ -66,7 +66,8 @@ The framework suggests **annotating outputs rather than modifying them**.
 
 An annotation might include:
 - intended use (e.g., exploratory, explanatory)
-- confidence tier (how much reliance is appropriate)
+- reliance level (what the output is allowed to do in this context)
+- confidence level (your assessment that the chosen reliance is warranted)
 - relevant ambiguity types
 - known failure modes
 - explicit judgment handoff points

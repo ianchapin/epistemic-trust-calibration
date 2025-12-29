@@ -1,26 +1,30 @@
 # Confidence
 
-In this framework, *confidence* refers to how much reliance it is appropriate to place on a representation in a given context.
+In this framework, **confidence** is your assessment that a chosen **reliance level** on a representation is warranted in a given context.
 
-Confidence is not certainty.
-It is not probability.
+Confidence is not certainty.  
+It is not probability.  
 It is not belief strength.
 
 Confidence is about *use*.
 
+A **reliance level** is a permission mode (what the representation is allowed to do).  
+A **reliance cap** is the maximum permitted reliance level in this context.
+
 ---
 
-## Confidence Is About Reliance, Not Truth
+## Confidence Justifies a Reliance Level
 
 Confidence answers questions such as:
-- How much weight should this representation carry?
+- Is it appropriate to rely on this representation at this level?
 - How much verification is required before acting?
 - How costly would failure be if this representation is wrong?
 - How reversible is the decision based on it?
+- How quickly would we notice if it fails?
 
-These questions are about action under uncertainty, not about whether a representation is true.
+These are questions about action under uncertainty, not about whether a representation is true.
 
-A representation can be useful even when confidence is low.
+A representation can be useful even when confidence is low.  
 A representation can be dangerous even when confidence feels high.
 
 ---
@@ -33,11 +37,12 @@ Confidence is always relative to:
 - the availability of alternatives
 - the cost of being wrong
 - the ability to revise later
+- the presence of safeguards and monitoring
 
-A representation may warrant:
-- high confidence in low-stakes exploration
-- moderate confidence for informing discussion
-- low confidence for high-stakes decisions
+The same representation may warrant:
+- higher confidence for low-stakes exploration
+- medium confidence for informing discussion
+- low confidence for high-stakes or irreversible decisions
 
 Confidence does not transfer automatically across contexts.
 
@@ -52,39 +57,38 @@ This framework does not require:
 - calibrated likelihoods
 - confidence scores
 
-Confidence is a qualitative judgment about reliance.
+Confidence is a qualitative judgment about appropriate reliance.
 
-Attempting to force confidence into precise numbers can create a false sense of rigor and obscure underlying uncertainty.
+Forcing confidence into precise numbers can create a false sense of rigor and obscure underlying uncertainty.
 
 ---
 
 ## Confidence and Trust
 
-Trust and confidence are closely related but distinct.
+Trust and confidence are related but distinct.
 
-- **Trust** concerns whether reliance is appropriate at all.
-- **Confidence** concerns how much reliance is appropriate.
+- **Trust** concerns whether reliance on a representation is appropriate at all for a purpose and scope.
+- **Confidence** concerns whether the chosen reliance level (and cap) is warranted given the decision context and safeguards.
 
-A representation may be trusted but only with low confidence.
-It may be distrusted for one use and trusted for another.
-
-Separating trust from confidence allows for more granular and honest use.
+You can trust a representation for a narrow use while holding low confidence in higher reliance levels.
 
 ---
 
 ## Confidence and Stakes
 
-Confidence should decrease as stakes increase, unless compensating safeguards exist.
+Confidence should generally decrease as stakes increase, unless compensating safeguards exist.
 
-High confidence is easier to justify when:
+Higher confidence is easier to justify when:
 - consequences are low
 - decisions are reversible
 - errors are easily detected
+- independent checks are available
 
-Low confidence is appropriate when:
+Lower confidence is appropriate when:
 - consequences are severe
 - decisions are irreversible
-- errors are costly or hidden
+- errors are costly or hard to detect
+- verification is weak or unavailable
 
 Ignoring the relationship between confidence and stakes is a common source of failure.
 
@@ -97,11 +101,12 @@ Reducing confidence does not mean discarding a representation.
 It may mean:
 - using it as one input among many
 - requiring independent confirmation
-- limiting its role to exploration
+- limiting its role to exploration or framing
 - delaying action
 - explicitly marking uncertainty
+- lowering the reliance cap
 
-Confidence calibration is about adjustment, not acceptance or rejection.
+Confidence calibration is adjustment, not acceptance or rejection.
 
 ---
 
@@ -110,11 +115,11 @@ Confidence calibration is about adjustment, not acceptance or rejection.
 This framework aims to:
 - separate confidence from truth claims
 - prevent confidence from inflating silently
-- tie confidence to context and stakes
-- preserve the ability to revise confidence over time
+- tie confidence to decision context and safeguards
+- keep reliance bounded and revisable over time
 
-It does not attempt to determine the correct level of confidence.
-It makes confidence explicit and bounded.
+It does not attempt to determine the “correct” confidence level.
+It makes confidence explicit and constrained.
 
 ---
 
@@ -123,8 +128,9 @@ It makes confidence explicit and bounded.
 If a representation is being treated as decisive without anyone addressing:
 - stakes
 - reversibility
-- cost of error
-- alternatives
+- detectability of failure
+- alternatives and checks
+- monitoring and fallback
 
 confidence is likely being overextended.
 

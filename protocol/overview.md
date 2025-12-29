@@ -8,6 +8,17 @@ It provides a structured method for making trust, scope, and judgment explicit.
 
 ---
 
+## Key Terms (to prevent confusion)
+
+- **Trust** = whether reliance on this representation is appropriate at all for a given **purpose and scope**.
+- **Reliance** = what this representation is **allowed to do** in this context (behavior / permission).
+- **Reliance cap** = the **maximum permitted** reliance level in this context.
+- **Confidence** = your **assessment** that the chosen reliance level (and cap) is warranted, given stakes, reversibility, detectability, and safeguards.
+
+Confidence is not a probability estimate. It’s a justification for a reliance level (and cap).
+
+---
+
 ## When to Apply the Protocol
 
 Apply the protocol when:
@@ -39,37 +50,42 @@ A minimal annotation includes:
 1. **Representation**
    - What is being relied on? (model output, metric, summary, analogy, etc.)
 
-2. **Intended Use (Tier)**
+2. **Trust (appropriate reliance at all?)**
+   - Is reliance appropriate at all for the intended purpose and scope?
+   - If yes: what purpose/scope is it trusted for?
+   - If no: what use should be prohibited?
+
+3. **Intended Use (Tier)**
    - What is it being used for right now?
    - Suggested tiers: exploratory, explanatory, operational, high-stakes
 
-3. **Decision Context**
-   - stakes, reversibility, detectability, time pressure, alternatives (see below)
+4. **Decision Context**
+   - stakes, reversibility, detectability, time pressure, alternatives, safeguards (see below)
 
-4. **Scope Boundaries**
+5. **Scope Boundaries**
    - Where does this apply, and where does it not apply?
 
-5. **Ambiguity Types (and why)**
+6. **Ambiguity Types (and why)**
    - semantic, contextual, mapping, structural, normative
 
-6. **Reliance Level (Confidence)**
-   - low / medium / high
-   - include **what this permits** (e.g., “input only” vs “decision weight”)
+7. **Reliance Level (Permission Mode) + Reliance Cap**
+   Pick the reliance level you are granting, and state the cap (the maximum permitted level) for this context:
 
-   Optional permission modes (to make reliance legible):
-   - **Input-only:** may inform thinking, not decisions
-   - **Supporting:** one factor among many, cannot dominate
-   - **Weight-bearing:** can meaningfully influence decisions with checks
-   - **Decisive:** rare; requires strong validation + explicit owner
+   - **Input-only:** may inform thinking; cannot justify action
+   - **Supporting:** one factor among many; cannot dominate
+   - **Weight-bearing:** can drive action **in-scope** with checks/monitoring
+   - **Decisive:** rare; requires independent validation + explicit owner + appeal/fallback
 
-7. **Failure Modes**
+   **Confidence (optional):** Low / Medium / High — your assessment that this reliance level (and cap) is warranted in this decision context (given safeguards and failure detectability).
+
+8. **Failure Modes**
    - failure → detectability → impact → mitigation
 
-8. **Revision Triggers**
-   - what would raise reliance?
-   - what would lower reliance?
+9. **Revision Triggers**
+   - what would raise reliance or increase the cap?
+   - what would lower reliance or reduce the cap?
 
-9. **Judgment Handoff**
+10. **Judgment Handoff**
    - what cannot be resolved here
    - who owns the decision anyway
 
@@ -77,7 +93,7 @@ A minimal annotation includes:
 
 ## Decision Context (Confidence Inputs)
 
-Confidence calibration depends on the decision context.
+Confidence calibration depends on the decision context **and safeguards** — and it exists to justify (or reject) a chosen reliance level (and cap).
 
 Before assigning a reliance level, capture:
 
@@ -86,8 +102,11 @@ Before assigning a reliance level, capture:
 - **Detectability:** How quickly would failure be noticed?
 - **Time pressure:** Are we acting now, soon, or later?
 - **Alternatives:** What other representations or checks are available?
+- **Safeguards:** What makes failure less likely, more detectable, or less costly? (monitoring, independent review, validation path, fallback, appeal, audits)
 
 If these are unknown or contested, confidence should be reduced rather than assumed.
+
+If you cannot justify the reliance level from the context + safeguards, downgrade reliance and/or reduce the cap.
 
 ---
 
@@ -98,7 +117,7 @@ Failure modes should be written as:
 - **Failure:** What breaks / what becomes false / what goes missing
 - **Detectability:** easy / moderate / hard (or “likely to be noticed?”)
 - **Impact:** what happens if we miss it
-- **Mitigation:** verification, fallback, scope limit, second source, human review
+- **Mitigation:** verification, fallback, scope limit, second source, monitoring, human review
 
 **Gating rule:** If impact is high and detectability is hard, reliance must be capped unless safeguards are explicit.
 
@@ -133,10 +152,12 @@ Tier labels can vary; the separation is what matters.
 ## What “Done” Looks Like
 
 A protocol pass is complete when:
+- trust (appropriate reliance at all) is stated for the purpose/scope
 - intended use is explicit
 - scope is explicit
 - ambiguity types are named
-- confidence is bounded
+- reliance level and reliance cap are explicit
+- confidence is bounded and justified by context + safeguards
 - failure modes are acknowledged
 - judgment handoff is marked
 
@@ -148,11 +169,22 @@ The goal is not agreement; it is visible constraints.
 ## Minimal Template
 
 - **Representation:**
+- **Trust (appropriate at all?)** for purpose/scope:
 - **Intended use (tier):**
-- **Decision context:** stakes, reversibility, detectability, time pressure, alternatives
+- **Decision context:** stakes, reversibility, detectability, time pressure, alternatives, safeguards
 - **Scope boundaries:**
 - **Ambiguity types (why):**
-- **Reliance level:** low / medium / high — *what this permits*
+- **Reliance level (permission mode):** Input-only / Supporting / Weight-bearing / Decisive — what this permits
+- **Reliance cap:** maximum permitted reliance level in this context
+- **Confidence (optional):** Low / Medium / High — why this reliance level/cap is warranted
 - **Failure modes:** failure → detectability → impact → mitigation
 - **Revision triggers:** raise / lower
 - **Judgment handoff:** unresolved + owner
+
+---
+
+### Example (showing the difference)
+
+- **Reliance:** Supporting (may guide discussion; cannot justify action)
+- **Reliance cap:** Supporting (do not escalate without new checks)
+- **Confidence:** Medium (stakes moderate, reversible, failures detectable, plus a second-source check)

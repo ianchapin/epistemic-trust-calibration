@@ -10,7 +10,11 @@ Representations include things like:
 - summaries
 - AI-generated outputs
 
-The framework is designed for situations where uncertainty is unavoidable and action is still required.
+⚠️ **Before using this framework, read [`CORE_CONSTRAINTS.md`](CORE_CONSTRAINTS.md) and [`MISUSE.md`](MISUSE.md).**  
+If you are looking for approval, certainty, or legitimacy, this framework is not the right tool.
+
+If you want the fastest on-ramp, start with the **Annotation Card**:  
+[`protocol/annotation-card.md`](protocol/annotation-card.md)
 
 ---
 
@@ -19,23 +23,23 @@ The framework is designed for situations where uncertainty is unavoidable and ac
 This project provides:
 - a set of core constraints that describe structural limits of thought and representation
 - concepts for reasoning about trust, judgment, and uncertainty
-- a simple taxonomy of ambiguity types
-- a protocol for annotating representations without adjudicating truth
+- a taxonomy of ambiguity types that fail in different ways
+- a protocol for **annotating representations**, not adjudicating truth
 - speculative use cases to explore where the approach might or might not help
 
-The focus is on **confidence allocation**, not belief enforcement.
+The focus is on **confidence allocation and bounded reliance**, not belief enforcement.
 
 ---
 
 ## What This Is Not
 
-This framework does not:
+This framework does **not**:
 - determine what is true
-- enforce correctness
+- certify correctness, safety, or responsibility
 - replace human judgment
 - eliminate ambiguity
 - require consensus
-- act as an authority
+- act as an authority or gate
 
 It does not attempt to solve epistemology or automate decision-making.
 
@@ -47,12 +51,14 @@ This framework is intended for people who:
 - are already accountable for outcomes
 - cannot fully defer responsibility upward
 - must act despite uncertainty
+- are wary of silent overconfidence in models, metrics, or explanations
 
-It is not intended as:
+It is **not** intended as:
 - a persuasion tool
 - a debate weapon
+- a compliance checklist
 - a way to block decisions without ownership
-- a substitute for authority
+- a substitute for authority or responsibility
 
 ---
 
@@ -63,11 +69,11 @@ Humans think and act through representations rather than interacting with realit
 Because representations are necessary and imperfect:
 - certainty is always bounded
 - trust is unavoidable
-- misuse often comes from overconfidence rather than malice
+- misuse more often comes from overconfidence than malice
 
-This framework treats representations as tools rather than authorities and focuses on making trust explicit, scoped, and revisable.
+This framework treats representations as **tools rather than authorities** and focuses on making trust **explicit, scoped, and revisable**.
 
-A common failure mode it addresses is mistaking representations for what they represent.
+A central failure mode it addresses is mistaking representations for what they represent.
 
 ---
 
@@ -77,12 +83,29 @@ You do not need to agree with or adopt the entire framework to use it, and it is
 
 Suggested reading order:
 1. `CORE_CONSTRAINTS.md`
-2. `concepts/representations.md`
-3. `ambiguity/README.md`
-4. Individual ambiguity type pages
-5. `use-cases/` (optional, speculative)
+2. `MISUSE.md`
+3. `concepts/recursion.md`
+4. `concepts/representations.md`
+5. `ambiguity/README.md`
+6. Individual ambiguity type pages
+7. `protocol/annotation-card.md`
+8. `protocol/overview.md`
+9. `use-cases/` (optional, speculative)
 
 Each section is modular and intended to stand on its own.
+
+---
+
+## About the Protocol
+
+The protocol provided in this repository:
+- starts with a lightweight **Annotation Card** for rapid, practical use ([`protocol/annotation-card.md`](protocol/annotation-card.md))
+- **annotates** representations rather than modifying them
+- constrains *how* outputs are relied on, not *what* decisions must be made
+- makes ambiguity, scope, and judgment visible
+- explicitly preserves human responsibility
+
+Completing the protocol does **not** mean a decision is correct, safe, or justified.
 
 ---
 
@@ -94,9 +117,29 @@ This framework is likely being misused if:
 - judgment ownership is left blank, abstract, or collective
 - ambiguity types are named without changing reliance or scope
 - it is cited as evidence that a decision was “responsible”
-- it increases confidence without adding safeguards, checks, or ownership
+- it increases confidence without adding safeguards, checks, or explicit ownership
 
-In these cases, reliance on the framework itself should be reduced.
+In these cases, **reliance on the framework itself should be reduced**.
+
+See [`MISUSE.md`](MISUSE.md) for detailed examples and anti-patterns.
+
+---
+
+## Recursion and Self-Application
+
+This framework is **recursive**.
+
+It is itself a representation and is subject to the same limits, ambiguities, and misuse patterns it describes.
+
+If the framework:
+- becomes mandatory
+- feels authoritative
+- produces closure rather than bounded confidence
+- or is used to launder judgment
+
+it is being misused.
+
+See [`concepts/recursion.md`](concepts/recursion.md) for details on applying the framework to itself.
 
 ---
 
@@ -106,7 +149,7 @@ In these cases, reliance on the framework itself should be reduced.
 - Trust must be scoped and revisable
 - Judgment is irreducible and should not be hidden
 - Representations are tools, not authorities
-- Overreach is a failure mode
+- Overreach is a predictable failure mode
 
 ---
 
@@ -116,9 +159,9 @@ This framework is successful if it:
 - slows or scopes at least some decisions
 - prevents at least some silent confidence transfer
 - makes at least some judgments explicit
-- allows at least some decisions to proceed with lower but honest confidence
+- allows some decisions to proceed with **lower but honest confidence**
 
-Widespread adoption, standardization, institutionalization, or endorsement are not success criteria.
+Widespread adoption, standardization, institutionalization, or endorsement are **not** success criteria.
 
 ---
 
@@ -154,5 +197,6 @@ Use, adapt, fork, or discard it as you see fit.
 ## Author Note
 
 This framework is intentionally incomplete.
-Interpretations, adaptations, and refusals are expected.
+
+Interpretations, adaptations, refusals, and even abandonment are expected.
 No single reading should be treated as authoritative.

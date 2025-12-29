@@ -1,13 +1,13 @@
 # Trust
 
-In this framework, *trust* refers to how much reliance a representation can reasonably bear for a given purpose.
+In this framework, **trust** refers to whether reliance on a representation is appropriate at all for a given **purpose and scope**.
 
-Trust is not belief.
-It is not agreement.
-It is not endorsement.
+Trust is not belief.  
+It is not agreement.  
+It is not endorsement.  
 It is not a moral judgment.
 
-Trust is about use.
+Trust is about *use*.
 
 ---
 
@@ -24,19 +24,20 @@ Even refusing to trust a representation is itself a trust decision about alterna
 
 The question is not whether trust exists, but whether it is:
 - explicit or implicit
+- scoped or unscoped
 - bounded or unbounded
 - revisable or frozen
 
 ---
 
-## Trust Is Contextual
+## Trust Is Scoped
 
 Trust is always scoped to a purpose.
 
 A representation may be:
 - trustworthy for exploration
 - untrustworthy for decision-making
-- useful for intuition
+- useful for intuition-building
 - inappropriate for justification
 - adequate at low stakes
 - dangerous at high stakes
@@ -60,7 +61,7 @@ Belief answers the question:
 > “Do I think this is true?”
 
 Trust answers the question:
-> “Is it appropriate to rely on this here?”
+> “Is it appropriate to rely on this here, for this purpose, within this scope?”
 
 These questions are related but not interchangeable.
 
@@ -68,17 +69,15 @@ These questions are related but not interchangeable.
 
 ## Trust and Confidence
 
-In this framework, confidence describes the *degree of reliance* that is appropriate.
+Trust and confidence are closely related but distinct.
 
-Confidence is not a probability estimate.
-It is not a measure of certainty.
+- **Trust** concerns whether reliance is appropriate at all (for a purpose and scope).
+- **Confidence** concerns whether a chosen **reliance level** is warranted given decision context and safeguards.
 
-Confidence answers questions like:
-- How much weight should this representation carry?
-- How much verification is required before acting?
-- How costly would it be if this representation failed?
+A representation can be trusted but only at low reliance.
+A representation can be distrusted for one use and trusted for another.
 
-Confidence can decrease without discarding usefulness.
+Separating trust from confidence allows for granular and honest use.
 
 ---
 
@@ -115,7 +114,8 @@ It structures how trust is allocated and constrained.
 If a representation is being used without anyone being able to say:
 - why it is trusted
 - for what purpose
-- within what limits
+- within what scope boundaries
+- and at what reliance level (and cap)
 
 then trust is present but implicit.
 
